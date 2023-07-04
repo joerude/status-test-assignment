@@ -50,12 +50,35 @@ ts.getAll()
 
 ts.getItem(7)  # {"id": 7, "parent": 4, "type": None}
 
-ts.getChildren(4)  # [{"id": 7, "parent": 4, "type": None}, {"id": 8, "parent": 4, "type": None}]
+ts.getChildren(4)  
+# [{"id": 7, "parent": 4, "type": None}, 
+# {"id": 8, "parent": 4, "type": None}]
 
 ts.getChildren(5)  # []
 
-ts.getAllParents(7)  # [{"id": 4, "parent": 2, "type": "test"}, {"id": 2, "parent": 1, "type": "test"}, {"id": 1, "parent": "root"}]
+ts.getAllParents(7)  
+# [{"id": 4, "parent": 2, "type": "test"}, 
+# {"id": 2, "parent": 1, "type": "test"}, 
+# {"id": 1, "parent": "root"}]
+
+```
+
+## Установка и запуск
+
+### Необходимые инструменты и технологии
+
+- [Python 3.10+](https://www.python.org/)
+
+### Клонируйте репозиторий
+
+```bash
+git clone https://github.com/joerude/status-test-assignment
+cd status-test-assignment
 ```
 
 
-## Запуск
+### Запуск тестов
+
+```bash
+python3 tests.py
+```
