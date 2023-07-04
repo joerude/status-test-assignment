@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "status-test-assignment"
+version = "0.1.0"
+description = ""
+authors = ["Zhoomart Cholponbek uulu <ma4akk@gmail.com>"]
+readme = "README.md"
+packages = [{include = "status_test_assignment"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.276"
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
